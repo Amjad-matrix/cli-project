@@ -38,6 +38,6 @@ class Task:
         # Instantiates a new Task object using the dictionary values
         task = cls(data["id"], data["title"], data["priority"], data["completed"])
         # Restores original creation timestamp if present, or creates a new one
-        task.created_at = data.get("created_at", datetime.now.isoformat())
+        task.created_at = data.get("created_at", datetime.now().isoformat())
         # Returns the newly created Task object instance
         return task
