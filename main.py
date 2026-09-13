@@ -1,7 +1,4 @@
-# Imports the main execution function from the taskmanager package CLI module
-from taskmanger.cli  import run_cli
+from tui import run_interactive_menu
 
-# Checks if script is being run directly from terminal rather than imported
 if __name__ == "__main__":
-  # Executes the primary CLI handler function
-  run_cli()
+    run_interactive_menu()
